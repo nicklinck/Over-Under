@@ -194,7 +194,7 @@ class Level(object):
             self.platform_list.add(self.button)
             self.button_list.append(self.button)
             
-            self.wall = Wall(600, 400, 700, 100, 10)
+            self.wall = Wall(600, 500, 700, 100, 10)
             self.platform_list.add(self.wall)
             
             self.button = Button(900, 700, self.wall)

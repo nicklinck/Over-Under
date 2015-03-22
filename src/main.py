@@ -27,7 +27,7 @@ def load():
         level_list.append(Level.Level(i))
     
     #sets this to the current level
-    current_level_num = 1
+    current_level_num = 0
     current_level = level_list[current_level_num]
     
     
@@ -312,7 +312,7 @@ class Player(pygame.sprite.Sprite):
 
     def jump(self):
         if self.onGround:
-            self.speedY = -15 / self.playerNum #different values for different players
+            self.speedY = -12 + (4.5 * (self.playerNum - 1)) #different values for different players
             self.onGround = False
  
     def draw(self, screen):
